@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+dist/   # if you want Vercel to build automatically
+build/  # CRA output folder
