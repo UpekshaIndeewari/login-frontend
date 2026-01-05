@@ -1,0 +1,58 @@
+.register-container {
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;   
+  align-items: center;      
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.register-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.register-links {
+  margin-top: 15px;
+}
+
+.register-links a {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Make checkboxes and text horizontal */
+.checkbox-horizontal label {
+  display: flex;          /* flex container for checkbox + text */
+  align-items: left;    /* vertically center text with checkbox */
+               /* space between checkbox and text */
+         /* makes the text clickable too */
+}
+
+/* Optional: style links inside the checkbox text */
+.checkbox-horizontal a {
+  color: #007bff;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+

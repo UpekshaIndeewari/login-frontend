@@ -1,0 +1,76 @@
+body {
+  height: 100vh; /* full viewport height */
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  background-color: #f5f5f5; /* optional: light background */
+  margin: 0; /* remove default margin */
+}
+
+.login-container {
+  width:900px;
+  margin: 0 auto;
+  display: flex;             /* horizontal layout */
+  justify-content: space-between;                /* space between boxes */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: different styling for left/right boxes */
+.left-box {
+  background-color: #c99797;
+  width:450px;
+  padding:20px;
+  height:500px;
+}
+
+.right-box {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  width:450px;
+  height:500px;
+
+}
+
+.login-container h1 {
+  text-align: center;
+}
+
+.login-form div {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.login-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.login-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-links a {
+  color: blue;
+  text-decoration: underline;
+}
