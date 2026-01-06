@@ -17,8 +17,8 @@ const LoginPage: React.FC = () => {
     const password = formData.get("password") as string;
 
     try {
-      // const response = await axios.post("http://127.0.0.1:8000/auth/login", { email, password });
-      const response = await axios.post("https://login-backend-1-yrlz.onrender.com/auth/login", { email, password });
+      const response = await axios.post("http://127.0.0.1:8000/auth/login", { email, password });
+      // const response = await axios.post("https://login-backend-1-yrlz.onrender.com/auth/login", { email, password });
 
       if (response.data.success) {
         // Optional: store user info or token in localStorage

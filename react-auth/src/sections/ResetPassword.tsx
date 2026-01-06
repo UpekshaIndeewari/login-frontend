@@ -28,7 +28,7 @@ const ResetPasswordPage: React.FC = () => {
     }
 
     try {
-      await axios.post(`https://login-backend-1-yrlz.onrender.com/auth/reset-password?token=${token}&new_password=${password}`);
+      await axios.post(`http://127.0.0.1:8000/auth/reset-password?token=${token}&new_password=${password}`);
       setMessage("Password has been reset successfully!");
       setIsError(false);
 

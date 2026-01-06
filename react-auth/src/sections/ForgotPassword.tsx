@@ -15,8 +15,8 @@ const ForgotPasswordPage: React.FC = () => {
     const email = formData.get("email") as string;
 
     try {
-      // const response = await axios.post(`http://127.0.0.1:8000/auth/forgot-password?email=${email}`);
-      const response = await axios.post(`https://login-backend-1-yrlz.onrender.com/auth/forgot-password?email=${email}`);
+      const response = await axios.post(`http://127.0.0.1:8000/auth/forgot-password?email=${email}`);
+      // const response = await axios.post(`https://login-backend-1-yrlz.onrender.com/auth/forgot-password?email=${email}`);
       setMessage(response.data.message || "Reset link sent!");
       setIsError(false);
     } catch (err: any) {
